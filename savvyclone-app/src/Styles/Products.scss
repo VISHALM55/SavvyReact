@@ -1,0 +1,45 @@
+.products {
+  margin-left: 6rem;
+  padding-bottom: 20px;
+}
+.products-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  
+  gap: 40px;
+}
+@media screen and (max-width: 1445px){
+.products-grid {
+    grid-template-columns: repeat(2,1fr);
+}
+}
+
+@media screen and (max-width: 930px){
+
+.products-grid{
+  grid-template-columns: repeat(1, 80%);
+}
+}
+ 
+.product-filters {
+    display: flex;
+    color: gray;
+    flex-direction: row;
+    column-gap: 40px;
+    margin-top: 20px;
+   
+    font-size: x-large;
+    cursor: pointer;
+}
+  
+.product-filters .active{
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+}
+@media only screen and (max-width: 767px){
+    .card, .products-filter {
+        margin-left: auto;
+}}
+

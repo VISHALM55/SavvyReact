@@ -1,0 +1,118 @@
+$lightfont : 21px;
+$boldfont : 31px;
+*{
+    margin: 0%;
+    padding: 0%;
+  
+}
+
+
+.topbar-logo{
+    height: 23px;
+    width: 23px;
+    margin-left: 25px;
+    margin-top: 9px;
+    border-radius: 50%;
+}
+
+.topbar{
+    height: 45px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+/* ----------- iPhone 12, 12 Pro ----------- */
+
+/* 2532x1170 pixels at 460ppi */ 
+/*320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV*/
+ .banner{
+        background-size: cover;
+        background-size: auto;
+    }
+
+
+
+.banner-img{
+    position:relative;
+    width: 100%;
+    padding-top: 37px;
+    height: 28rem;
+    top: 6px;
+}
+.banner-right{
+    position: absolute;
+    display: flex;
+
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-end;
+    right: 15rem;
+    left: 0;
+    top: 8rem;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bold-font{
+    font-size: $boldfont;
+    padding-left: 4px;
+    font-weight: 600;
+}
+.light-font{
+    font-size: $lightfont;
+    font-weight: 300;
+}
+.banner-btn{
+    padding: 20px 80px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+}
+
+.bank{
+    display: flex;
+    flex-direction: row;
+    background-color:#edeef0;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+@media screen and (max-width:750px) {
+    .bank{
+      
+        flex-direction: column;
+    }
+   
+}
+// @media screen and (max-width:941px) {
+//     .payment-topbar p{
+//         font-size: 18px;
+//     }
+// }
+.payment-topbar p{    
+    font-size: $boldfont;
+    
+}
+.payment-topbar-logo {
+    display: flex;
+    align-items: center;
+    height: 130px;
+    justify-content: center;
+   
+    margin: 0%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+li{
+    list-style-type: none;
+}
