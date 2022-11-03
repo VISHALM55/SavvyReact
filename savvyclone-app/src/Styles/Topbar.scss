@@ -33,6 +33,7 @@ $boldfont : 31px;
 769px — 1024px: Small screens, laptops
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV*/
+
  .banner{
         background-size: cover;
         background-size: auto;
@@ -98,6 +99,7 @@ $boldfont : 31px;
 //         font-size: 18px;
 //     }
 // }
+
 .payment-topbar p{    
     font-size: $boldfont;
     
