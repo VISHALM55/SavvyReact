@@ -59,3 +59,9 @@
     position: absolute;
     right: 1%;
   } 
+  @media only screen and (max-width: 450px){
+    .card  button{
+        height: 3rem;
+        padding: 0rem 0.5rem 0.5rem;
+        font-size: .8rem;
+}}
