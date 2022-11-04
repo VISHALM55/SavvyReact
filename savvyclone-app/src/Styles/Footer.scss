@@ -1,13 +1,28 @@
 .footer-container{
     padding: 40px;
-    padding-top: 100px;
+    padding-top: 10rem;
     padding-bottom: 50px;
     background-color:#edeef0;
 }
 .footer-logo p{
-    font-size: larger;
+    font-size: 19px;
     text-align: start;
     margin: 0px 0px 0px 0px;
     word-wrap: normal;
+}
+
+ #address-logo {
+    font-size: 19px;
+}
+
+#address-logo a{
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width: 450px){
+    .footer-container{
+    padding-top: 50rem;
+        margin-bottom: 1rem;
+    }
 }
 

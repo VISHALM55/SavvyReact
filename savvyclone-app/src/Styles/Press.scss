@@ -41,6 +41,19 @@
     margin-right:2rem ;
     
 }
+@media screen and (max-width: 450px){
+    .press-review-box{
+    padding-top: 3.5rem;
+    margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .press-review-container{
+        flex-wrap: wrap;
+        
+    }
+    }
+
 .reviews img{
     margin: 0 28px;
     width: 71%;

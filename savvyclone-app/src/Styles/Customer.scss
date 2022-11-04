@@ -37,8 +37,22 @@
     height: 18rem;
     width: 16rem;
     margin-right:2rem ;
+
     
 }
+@media screen and (max-width: 450px){
+    .review-box{
+    padding-top: 3.5rem;
+    margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 450px){
+    .customer-review-container{
+        flex-wrap: wrap;
+        overflow: hidden;
+
+    }
+    }
 .reviews{
     padding: 10px;
     margin: 1px;
