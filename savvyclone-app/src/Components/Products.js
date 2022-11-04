@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react'
+import React, {  useEffect } from 'react'
 import {useState} from 'react'
 import axios from 'axios';
 import Cards from './Cards'
@@ -57,10 +57,10 @@ const Products = () =>{
       
         <div className='product-filters'>
             
-            <span key={0} className={`${ActiveFilter === 0 && 'active'}`}  onClick={(e) => filterContent(0)}>View All</span>
-            <span key={1} className= {` ${ActiveFilter === 1 && 'active'}`} onClick={(e) => filterContent(1)}>Travel</span>
-            <span key={2} className={` ${ActiveFilter === 2 && 'active'}`} onClick={(e) => filterContent(2)}>Electronics</span>
-            <span key={3} className= {` ${ActiveFilter === 3 && 'active'}`} onClick={(e) => filterContent(3)}>Others</span>
+            <span className={`${ActiveFilter === 0 && 'active'}`}  onClick={(e) => filterContent(0)}>View All</span>
+            <span className= {` ${ActiveFilter === 1 && 'active'}`} onClick={(e) => filterContent(1)}>Travel</span>
+            <span className={` ${ActiveFilter === 2 && 'active'}`} onClick={(e) => filterContent(2)}>Electronics</span>
+            <span className= {` ${ActiveFilter === 3 && 'active'}`} onClick={(e) => filterContent(3)}>Others</span>
         </div>
           
         <div className='products-grid'>

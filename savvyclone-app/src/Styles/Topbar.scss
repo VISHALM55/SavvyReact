@@ -50,18 +50,48 @@ $boldfont : 31px;
 }
 .banner-right{
     position: absolute;
-    display: flex;
-
-    flex-direction: column;
+    
     text-align: center;
     align-items: flex-end;
     right: 15rem;
-    left: 0;
+
     top: 8rem;
     justify-content: center;
     overflow: hidden;
 }
+.banner-btn{
+    position: absolute;
+    align-items: flex-end;
+    top: 20rem;
+    right: 16rem;
+}
+@media only screen and (max-width: 540px){
 
+.banner-right {
+    left: 3rem;
+    right: auto;
+    
+}
+}
+@media only screen and (max-width: 540px){
+
+    .bold-font{
+        font-size: 28px !important;
+    }
+    }
+@media only screen and (max-width: 540px){
+
+    .banner-btn {
+        left: 3rem;
+        right: auto;
+    }
+}
+@media only screen and (max-width: 540px){
+
+    .payment-topbar p{
+        font-size: 25px !important;
+    }
+}
 .bold-font{
     font-size: $boldfont;
     padding-left: 4px;
@@ -87,18 +117,25 @@ $boldfont : 31px;
     padding-left: 10px;
     padding-right: 10px;
 }
+
+
+@media only screen and (max-width: 767px){
+.payment-topbar-logo img{
+    height:80px;
+    width: 75px;
+
+}
+}
 @media screen and (max-width:750px) {
     .bank{
-      
+        flex: 1 1 100%;
         flex-direction: column;
+        text-align: center;
+        
     }
    
 }
-// @media screen and (max-width:941px) {
-//     .payment-topbar p{
-//         font-size: 18px;
-//     }
-// }
+
 
 .payment-topbar p{    
     font-size: $boldfont;

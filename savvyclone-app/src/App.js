@@ -10,7 +10,7 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
-  <div >
+  <>
 
     <Header />
     <Products />
@@ -18,7 +18,7 @@ function App() {
     <Press />
     <Footer />
   
-  </div>
+  </>
   );
 }
 
