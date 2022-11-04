@@ -23,12 +23,12 @@ const Topbar =()=>{
         <div className='payment-topbar'>
             <p><b>Shop securely, </b>setup payments with topnotch</p>   
     </div>
-        <ul className ="payment-topbar-logo">
-            <li><img src="https://savvyclone.netlify.app/static/media/hdfc-logo.1486b7440a2bd9d613a3edf1b5b515ca.svg" width="159" height="166"></img></li>
-            <li><img src="https://savvyclone.netlify.app/static/media/icici-logo.203167b3101d63921f605fb44c422a76.svg" width="139" height="76"></img></li>
-            <li><img src="https://savvyclone.netlify.app/static/media/axis-logo.8b6a207707c37d61c9566e7038bb7352.svg" width="139" height="76"></img></li>
-            <li><img src="https://savvyclone.netlify.app/static/media/sbi-logo.aa98839b45cdfddb5157e28f630d0174.svg" width="60" height="36"></img></li>
-        </ul>
+        <div className ="payment-topbar-logo">
+            <img className='bankimage1' src="https://savvyclone.netlify.app/static/media/hdfc-logo.1486b7440a2bd9d613a3edf1b5b515ca.svg"></img>
+            <img className='bankimage2' src="https://savvyclone.netlify.app/static/media/icici-logo.203167b3101d63921f605fb44c422a76.svg" ></img>
+            <img className='bankimage3' src="https://savvyclone.netlify.app/static/media/axis-logo.8b6a207707c37d61c9566e7038bb7352.svg" ></img>
+            <img className='bankimage4' src="https://savvyclone.netlify.app/static/media/sbi-logo.aa98839b45cdfddb5157e28f630d0174.svg" ></img>
+        </div>
     </div>
         
       

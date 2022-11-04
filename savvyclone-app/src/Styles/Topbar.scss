@@ -65,33 +65,26 @@ $boldfont : 31px;
     top: 20rem;
     right: 16rem;
 }
-@media only screen and (max-width: 540px){
 
-.banner-right {
-    left: 3rem;
-    right: auto;
-    
-}
-}
 @media only screen and (max-width: 540px){
 
     .bold-font{
         font-size: 28px !important;
     }
+    .payment-topbar p{
+        font-size: 25px !important;
     }
-@media only screen and (max-width: 540px){
-
     .banner-btn {
         left: 3rem;
         right: auto;
     }
-}
-@media only screen and (max-width: 540px){
-
-    .payment-topbar p{
-        font-size: 25px !important;
+    .banner-right {
+        left: 3rem;
+        right: auto;
+        
     }
-}
+    }
+
 .bold-font{
     font-size: $boldfont;
     padding-left: 4px;
@@ -119,21 +112,33 @@ $boldfont : 31px;
 }
 
 
-@media only screen and (max-width: 767px){
-.payment-topbar-logo img{
-    height:80px;
-    width: 75px;
 
-}
-}
-@media screen and (max-width:750px) {
+@media screen and (max-width:771px) {
     .bank{
         flex: 1 1 100%;
         flex-direction: column;
         text-align: center;
         
     }
-   
+   .payment-topbar-logo{
+    gap: 0 !important;
+   }
+    .bankimage1 {
+        width:80px;
+        height:76px;
+    }
+    .bankimage2{
+        width:130px;
+        height:116px;
+    }
+    .bankimage3{
+        width: 80px;
+        height:76px;
+    }
+    .bankimage4{
+        width:70px;
+        height:66px;
+    }
 }
 
 
@@ -142,17 +147,30 @@ $boldfont : 31px;
     
 }
 .payment-topbar-logo {
+   
     display: flex;
     align-items: center;
     height: 130px;
     justify-content: center;
-   
+    gap: 40px;  
     margin: 0%;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 1px;
+    padding-left: 1px;
 }
 
-
-li{
-    list-style-type: none;
+ .bankimage1 {
+    width:130px;
+    height:100px;
+}
+.bankimage2{
+    width:130px;
+    height:100px;
+}
+.bankimage3 {
+    width:130px;
+    height:100px;
+}
+.bankimage4{
+    width:80px;
+    height:66px;
 }

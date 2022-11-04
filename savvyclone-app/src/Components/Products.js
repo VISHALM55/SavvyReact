@@ -29,7 +29,7 @@ const Products = () =>{
     setActiveFilter(val);
     if (val === 0) {
       setTempRes(Res);
-    } else if (val === 1) {
+    } else if (val === 2) {
       let temp = Res.filter((e) => {
         if (e.category.name === "Electronics")
         return true;
@@ -43,7 +43,7 @@ const Products = () =>{
         return false;
       });
       setTempRes(temp);
-    } else if (val === 2) {
+    } else if (val === 1) {
       let temp = Res.filter((e) => {
         if (e.category.name === "Shoes") return true;
         return false;
