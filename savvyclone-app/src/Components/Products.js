@@ -9,7 +9,7 @@ import '../Styles/Cards.scss'
 
 const Products = () =>{
   const [Show, setShow] = useState(false);
-  const [ModalData, setModalData] = useState([{}])
+  const [ModalData, setModalData] = useState([])
 const showModal=(data) =>{
   console.log(data);
   setModalData(data)

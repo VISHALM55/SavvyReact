@@ -9,13 +9,14 @@
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 10;
+
 }
+
 
 .modal-header{
     position: absolute;
     //background-color: white;
-    padding: 12px 180px;
+    padding: 12px ;
     margin-bottom: 33.75rem;    
    
 }
@@ -23,10 +24,15 @@
     text-align: center;
     padding-right: 20px;
 }
-.modal-close{
-float: right;
-margin-left: 46rem;
-padding: 2px;
+.modal-close {
+    float: right;
+    margin-left: 46rem;
+    padding: 2px;
+    background-color: white;
+    border: none;
+    font-size: larger;
+    color: black;
+    cursor: pointer;
 }
 .modal-footer{
     position: absolute;
@@ -36,7 +42,7 @@ padding: 2px;
 
 }
 .modal-image{
-    margin: 30%;
+   // margin: 30%;
     height: auto;
     background-color: white;
     padding: 3.5rem;
@@ -47,6 +53,7 @@ padding: 2px;
     object-fit: contain;
     overflow: hidden;
 }
+
 // .modal-body{
 //     overflow: hidden;
 //     width: auto;
