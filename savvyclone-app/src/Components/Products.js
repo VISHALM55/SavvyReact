@@ -2,11 +2,29 @@ import React, {  useEffect } from 'react'
 import {useState} from 'react'
 import axios from 'axios';
 import Cards from './Cards'
+import Modal from './Modal';
 import '../Styles/Products.scss'
 import '../Styles/Cards.scss'
 
 
 const Products = () =>{
+  const [Show, setShow] = useState(false);
+  const [ModalData, setModalData] = useState([{}])
+const showModal=(data) =>{
+  console.log(data);
+  setModalData(data)
+  setShow(true)
+}
+if(Show){
+  document.body.style.overflow='hidden';
+}
+if(!Show){
+  document.body.style.overflow='unset';
+}
+const onClose=()=>{
+  setShow(!Show)
+}
+
   
   const [Res, setRes] = useState([]);      
   const[TempRes,setTempRes] =useState([]);
@@ -75,7 +93,7 @@ const Products = () =>{
               pName={item.title}
               pPrice={item.price}
               pImg={item.images[2]}
-              
+              showModal={showModal}
             />
           
           
@@ -83,6 +101,15 @@ const Products = () =>{
           );
         })}
         
+      </div>
+      <div>
+      <Modal
+        show={Show}
+        onClose={onClose}
+        pName={ModalData.pName}
+        pPrice={ModalData.pPrice}
+        pImg={ModalData.pImg}
+      />
       </div>
     </div>
          

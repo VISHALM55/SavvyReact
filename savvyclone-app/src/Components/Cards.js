@@ -15,7 +15,7 @@ const Cards = (props) => {
                     <div className='product-value'>
                         <span>&#8377;{props.pPrice}/mon</span>
                     </div>
-                    <button>View Product</button>
+                    <button onClick={()=>props.showModal(props)}>View Product</button>
                 </div>
             </div>
         
