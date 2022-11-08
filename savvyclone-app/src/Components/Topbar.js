@@ -1,5 +1,7 @@
 import React from 'react'
 import '../Styles/Topbar.scss';
+import { Routes, Route, Link } from 'react-router-dom'; 
+import KnowMore from './KnowMore';
 
 
 
@@ -8,6 +10,7 @@ const Topbar =()=>{
 
     return (
       <>
+      
         <div className='topbar'>
             <img className='topbar-logo' src="https://savvyclone.netlify.app/static/media/logo.df99f92804cded1ea132.webp"></img>
         </div>
@@ -18,7 +21,10 @@ const Topbar =()=>{
             <span className='bold-font'>Get Rewarded with <br></br>Savvypay</span><br></br><br></br>
           <p className='light-font'>Wish, Save and Buy for the<br></br> <span>products you love, guilt-free</span></p>
         </div>
-          <button className='banner-btn'>KNOW MORE</button>
+        <Link to='/KnowMore'><button className='banner-btn'>KNOW MORE</button></Link>
+          <Routes>
+        <Route path='/KnowMore' element ={<KnowMore />}/>
+      </Routes>
         <div className='bank'>
         <div className='payment-topbar'>
             <p><b>Shop securely, </b>setup payments with topnotch</p>   
