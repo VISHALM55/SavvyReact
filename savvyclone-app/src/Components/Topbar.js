@@ -22,9 +22,9 @@ const Topbar =()=>{
           <p className='light-font'>Wish, Save and Buy for the<br></br> <span>products you love, guilt-free</span></p>
         </div>
         <Link to='/KnowMore'><button className='banner-btn'>KNOW MORE</button></Link>
-          <Routes>
+          {/* <Routes>
         <Route path='/KnowMore' element ={<KnowMore />}/>
-      </Routes>
+      </Routes> */}
         <div className='bank'>
         <div className='payment-topbar'>
             <p><b>Shop securely, </b>setup payments with topnotch</p>   

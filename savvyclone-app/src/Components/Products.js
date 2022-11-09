@@ -35,6 +35,7 @@ const onClose=()=>{
       .get("https://api.escuelajs.co/api/v1/products")
       .then(function (response) {
         setRes(response.data);
+        //console.log(response.data.slice(0,2))
         setTempRes(response.data);
       })
       .catch(function () {
